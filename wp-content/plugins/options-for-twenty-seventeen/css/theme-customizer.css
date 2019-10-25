@@ -1,0 +1,10 @@
+#accordion-section-theme_options > .accordion-section-title:before,
+#accordion-section-ofts_general > .accordion-section-title:before,
+#accordion-section-ofts_header > .accordion-section-title:before,
+#accordion-section-ofts_navigation > .accordion-section-title:before,
+#accordion-section-ofts_content > .accordion-section-title:before,
+#accordion-section-ofts_footer > .accordion-section-title:before {
+    content: "\f111";
+    font-family: dashicons;
+    padding: 3px;
+}

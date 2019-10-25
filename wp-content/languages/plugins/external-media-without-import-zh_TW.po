@@ -1,0 +1,79 @@
+# Translation of Plugins - External Media without Import - Stable (latest release) in Chinese (Taiwan)
+# This file is distributed under the same license as the Plugins - External Media without Import - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-06-07 14:00:56+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: zh_TW\n"
+"Project-Id-Version: Plugins - External Media without Import - Stable (latest release)\n"
+
+#: external-media-without-import.php:109
+msgid ""
+"Please fill in the media URLs.\n"
+"Multiple URLs are supported with each URL specified in one line."
+msgstr "請輸入外部媒體網址。支援批次輸入多個網址，請每行輸入一個網址。"
+
+#: external-media-without-import.php:66 external-media-without-import.php:67
+#: external-media-without-import.php:84 external-media-without-import.php:89
+msgid "Add External Media without Import"
+msgstr "新增外部媒體 (不需匯入)"
+
+#: external-media-without-import.php:79
+msgid "or"
+msgstr "或"
+
+#: external-media-without-import.php:108
+msgid "Add medias from URLs"
+msgstr "從網址新增媒體"
+
+#: external-media-without-import.php:113
+msgid "Please fill in the following properties manually. If you leave the fields blank (or 0 for width/height), the plugin will try to resolve them automatically."
+msgstr "請手動輸入以下內容。如果欄位留空，或將寬度/高度設定為 0，這個外掛會設著自動解析外部媒體。"
+
+#: external-media-without-import.php:116
+msgid "Width"
+msgstr "寬度"
+
+#: external-media-without-import.php:118
+msgid "Height"
+msgstr "高度"
+
+#: external-media-without-import.php:120
+msgid "MIME Type"
+msgstr "MIME 類型"
+
+#: external-media-without-import.php:127
+msgid "Clear"
+msgstr "清除"
+
+#: external-media-without-import.php:128
+msgid "Add"
+msgstr "新增"
+
+#: external-media-without-import.php:130
+msgid "Cancel"
+msgstr "取消"
+
+#: external-media-without-import.php:191 external-media-without-import.php:198
+msgid "Width and height must be non-negative integers."
+msgstr "[寬度] 及 [高度] 這兩項設定值必須為正整數。"
+
+#. Plugin Name of the plugin
+msgid "External Media without Import"
+msgstr "External Media without Import"
+
+#. Description of the plugin
+msgid "Add external images to the media library without importing, i.e. uploading them to your WordPress site."
+msgstr "將外部圖片新增至 [媒體庫]，但不需要將這些外部圖片儲存一份副本在 [媒體庫] 中。"
+
+#. Author of the plugin
+msgid "Zhixiang Zhu"
+msgstr "Zhixiang Zhu"
+
+#. Author URI of the plugin
+msgid "http://zxtechart.com"
+msgstr "https://zxtechart.com"

@@ -1,0 +1,142 @@
+﻿<!DOCTYPE HTML>
+<!--[if lt IE 7 ]> <html lang="en" class="ie ie6"> <![endif]--> 
+<!--[if IE 7 ]>	<html lang="en" class="ie ie7"> <![endif]--> 
+<!--[if IE 8 ]>	<html lang="en" class="ie ie8"> <![endif]--> 
+<!--[if IE 9 ]>	<html lang="en" class="ie ie9"> <![endif]--> 
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<html xmlns:wb="https://open.weibo.com/wb">
+<head>
+<meta charset="utf-8">
+<title>User Public Transportation-Human ICT Software</title>
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<!--<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,bold">-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link href="et-line-font/style.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script type="text/javascript">
+		
+function f1(){
+		
+	var cardno = document.getElementById('cardno').value;
+
+			var url = "./data.php?cardno="+cardno;
+	
+		var xhr = new XMLHttpRequest();
+		
+	xhr.onreadystatechange = function(){
+			
+	if(xhr.readyState == 4){
+		
+			var result = xhr.responseText;
+	
+				document.getElementById("result").innerHTML = xhr.responseText;
+					//alert(xhr.responseText);
+	
+			}
+		
+	}
+			
+		xhr.open('get',url);
+			
+		xhr.send(null);
+		
+}
+	
+</script>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=1858940156" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body id="home">
+<section class="main">
+<div id="Content" class="wrapper topSection">
+	<div id="Header">
+	<div class="wrapper">
+		<h1><img src="images/logo1.png" /></h1>
+<h1>Urban Public Transportation</h1>
+		</div>
+	</div>
+
+  <div class="countdown styled">
+    <h1>Product News</h1>
+ <h2><wb:livestream color="cccccc,F8C1A5,FFFFFF,B8DCDC,F86365,F86365" appkey="1858940156" titlebar="n" border="n" publish="n" topic="|humanict%20software" width="auto" height="500" ></wb:livestream><h2>
+	
+     
+<h4>Transportation Card Balance Query</h4>
+<h4><label for="cardno">Card Number：</label><input type="text" name="cardno" id="cardno">
+	
+<input type="button" value="Search" onclick="f1()"></h4>
+<h4>Card Number has been hided</h4>
+<h3><span>Balance：￥</span><span id="result"></span></h3>
+
+ <h4>Team member</h4>
+              <p>고가해 20161795</p>
+              <p>온가력 20174950</p>
+              <p>윤동환 20142488</p>
+              <p>황몽가 20156242</p>
+              <p>엽명 20186751</p>
+              <p>장호 20156302</p>
+</div>
+
+
+  </div>
+
+</section>
+<section class="subscribe spacing">
+<div class="container">
+
+</section>
+
+<section class="features spacing">
+  <div class="container">
+    <h2 class="text-center">Features</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="featuresPro">
+          <div class="col-md-3 col-sm-3 col-xs-3 text-center icon"><i class="icon-gift"></i></div>
+          <div class="col-md-9 col-sm-9 col-xs-9"> 
+            <!--features 1-->
+            <h4>Convenient</h4>
+            <p>Wechat Mini program based on javascript..Not need to install.Real-time Searching the best way for your trip</p>
+            <!--features 1 end--> 
+          </div>
+        </div>
+        <div class="featuresPro">
+          <div class="col-md-3 col-sm-3 col-xs-3 text-center icon"><i class="icon-trophy"></i></div>
+          <div class="col-md-9 col-sm-9 col-xs-9"> 
+            <!--features 2-->
+            <h4>Widely</h4>
+            <p>Using advanced api,you can using where you living in china.</p>
+            <!--features 2 end--> 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="featuresPro">
+          <div class="col-md-3 col-sm-3 col-xs-3 text-center icon"><i class="icon-tools"></i></div>
+          <div class="col-md-9 col-sm-9 col-xs-9"> 
+            <!--features 3-->
+            <h4>Share</h4>
+            <p>You can tell any route your friends needed when they should get to where are you here.</p>
+            <!--features 3 end--> 
+          </div>
+        </div>
+        <div class="featuresPro">
+          <div class="col-md-3 col-sm-3 col-xs-3 text-center icon"><i class="icon-upload"></i></div>
+          <div class="col-md-9 col-sm-9 col-xs-9"> 
+            <!--features 4-->
+            <h4>Private</h4>
+            <p>Based on Tencent security the sensitive information will not uploading.</p>
+            <!--features 4 end-->
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+</body>
+</html>

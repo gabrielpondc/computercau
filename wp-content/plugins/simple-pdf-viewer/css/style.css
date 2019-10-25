@@ -1,0 +1,22 @@
+.s_pdf_download_link,
+.s_pdf_download_link:hover{
+	text-decoration: none;
+}
+
+.s_pdf_download_bttn{
+	display: block;
+	padding: 5px 20px;
+	background: #333;
+	color: #fff;
+	font-size: 18px;
+	margin-top: 20px;
+	border: 2px solid transparent;
+	transition: all ease .25s;
+	-webkit-transition: all ease .25s;
+}
+
+.s_pdf_download_bttn:hover{
+	background: #fff;
+	border: 2px solid #333;
+	color: #333;
+}

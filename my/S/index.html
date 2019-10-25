@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Transportation Card balance query</title>
+	<script type="text/javascript">
+		function f1(){
+			var cardno = document.getElementById('cardno').value;
+			var url = "./data.php?cardno="+cardno;
+			var xhr = new XMLHttpRequest();
+			xhr.onreadystatechange = function(){
+				if(xhr.readyState == 4){
+					var result = xhr.responseText;
+					document.getElementById("result").innerHTML = xhr.responseText;
+					//alert(xhr.responseText);
+				}
+			}
+			xhr.open('get',url);
+			xhr.send(null);
+		}
+	</script>
+	<style type="text/css">
+		*{
+			font-size: 45px;
+		}
+	</style>
+</head>
+<body>
+		<h2>Transportation Card</h2>
+		<h3>Balance query</h4>
+		<label for="cardno">Card Number：</label><input type="text" name="cardno" id="cardno">
+		<input type="button" value="Search" onclick="f1()">
+		<div><span>Balance：</span><span id="result"></span></div>
+	
+</body>
+</html>
